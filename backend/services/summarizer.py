@@ -75,7 +75,7 @@ DOCUMENT:
         data = json.loads(raw)
         sections = [SummarySection(**s) for s in data["sections"]]
     except Exception as exc:
-        logger.warning("Summarization failed (%s). Returning fallback.", type(exc).__name__)
+        logger.warning("Summarization failed (%s: %s). Returning fallback.", type(exc).__name__, exc, exc_info=True)
         sections = [
             SummarySection(
                 title="Summary Unavailable",

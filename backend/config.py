@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     max_upload_bytes: int = 10 * 1024 * 1024  # 10 MB
     classification_confidence_threshold: float = 0.75
     # Gemini model to use for all LLM calls
-    gemini_model: str = "gemini-2.0-flash"
+    gemini_model: str = "gemini-3.6-flash"
 
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 
