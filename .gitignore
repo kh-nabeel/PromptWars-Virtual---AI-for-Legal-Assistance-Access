@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+dist/
+build/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+*.cover
+.pytest_cache/
+
+# Node
+node_modules/
+.npm/
+frontend/dist/
+frontend/build/
+
+# Environment — NEVER commit real keys
+.env
+*.env.local
+*.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sample docs > 200 KB (prevent accidental size bloat)
+sample_docs/*.pdf
+sample_docs/*.docx
+sample_docs/*.txt
+
+# Temp uploads (backend writes here at runtime)
+backend/tmp/
+
+# Logs
+*.log
